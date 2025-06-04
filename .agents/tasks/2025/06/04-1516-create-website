@@ -1,0 +1,25 @@
+Implement the web-site as described in `docs/SPEC.md`.
+Aim only for basic aesthetics (mostly reasonable layout).
+
+Add `just` to the nix devShell and create a justfile with a target
+for building the static version of the web-site and for launching
+the dynamic version.
+
+All build outputs should go to a `build` directory (which should be
+added to gitignore).
+
+For this first version, you can use the example benchmark data available
+in `test/example-data`. The directory structure has the form:
+
+test/example-data/${system_name}/${benchmark_name}
+
+Read docs/TESTING.md and try to create some basic tests that will
+be executed with the `just test` target.
+
+Add suitable linters to the devShell and add a target `just lint` to
+run them.
+
+Document the structure of the example data in AGENTS.md as well as
+the added just targets for testing and linting.
+
+Try to make your tests pass without taking any inapropriate shortcuts.
