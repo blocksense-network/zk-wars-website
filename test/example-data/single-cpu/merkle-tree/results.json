@@ -1,0 +1,56 @@
+{
+  "benchmarking": [
+    {
+      "name": "merkle-tree",
+      "compile": {
+        "timeStarted": "2024-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 70,
+        "mean": 7,
+        "deviation": 0.35000000000000003,
+        "min": 6.6499999999999995,
+        "max": 7.3500000000000005,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2024-06-01T12:00:07Z",
+        "runs": 10,
+        "totalDuration": 140,
+        "mean": 14,
+        "deviation": 0.7000000000000001,
+        "min": 13.299999999999999,
+        "max": 14.700000000000001,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2024-06-01T12:00:21Z",
+        "runs": 10,
+        "totalDuration": 50,
+        "mean": 5,
+        "deviation": 0.25,
+        "min": 4.75,
+        "max": 5.25,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "benchmarking": [
+    {
+      "name": "poseidon-hash",
+      "compile": {
+        "timeStarted": "2024-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 50,
+        "mean": 5,
+        "deviation": 0.25,
+        "min": 4.75,
+        "max": 5.25,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2024-06-01T12:00:05Z",
+        "runs": 10,
+        "totalDuration": 120,
+        "mean": 12,
+        "deviation": 0.6000000000000001,
+        "min": 11.399999999999999,
+        "max": 12.600000000000001,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2024-06-01T12:00:17Z",
+        "runs": 10,
+        "totalDuration": 40,
+        "mean": 4,
+        "deviation": 0.2,
+        "min": 3.8,
+        "max": 4.2,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}
