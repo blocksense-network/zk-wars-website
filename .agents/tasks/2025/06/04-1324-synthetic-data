@@ -1,0 +1,23 @@
+Your task is to generate some synthetic/example benchmark data according
+to the schema defined in docs/SPEC.md.
+
+The data should feature the following:
+
+* 5 benchmarks with realistic names
+
+* 3 different hardware configurations:
+  - a single CPU system
+  - a system with 2 CPUs
+  - a system with a CPU and a GPU (it will have the `accelerated: true` property)
+
+The first system should have results for all benchmarks.
+The second system should have results for 4 of the benchmarks
+The third system should have results for 3 of the benchmarks (including the benchmark that was not included for the second system)
+
+All files should be placed in newly created subdirectories under `test/example-data`, following the following structure:
+
+test/example-data/${system_name}/${benchmark_name}/results.json
+
+Make sure that all the generated data is realistic to some extent:
+  - The hardware specs roughly reflect the obtained performance
+  - The consumed memory is similar for the same benchmark/action pair on the different systems. By "action", I mean "compile", "prove" and "verify", as indicated in the json schema.
