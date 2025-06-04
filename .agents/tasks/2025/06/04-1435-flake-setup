@@ -1,0 +1,3 @@
+Create a development environment based on Nix flakes and direnv.
+Install all necessary dependencies that will be needed for the plan
+described in `docs/TESTING.md`
