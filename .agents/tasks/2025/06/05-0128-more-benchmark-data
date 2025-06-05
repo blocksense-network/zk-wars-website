@@ -1,0 +1,19 @@
+In git commit 2e02ddd3b66daf2bee9e44b4046825ff0749497f, I've updated the
+specification of the benchmark data file format and directory structure.
+Please see the commit diff for details.
+
+Please update all existing benchmark files in the `test/example-data` dir
+to match the new spec and then expand the set of data json files to include:
+
+* 10 different benchmarks (come up with realistic names)
+* 5 hardware specs (use unique realistic descriptive names)
+
+Use similar logic as the one provided in `.agents/tasks/2025/06/04-1324-synthetic-data`
+to introduce variety in the benchmark data, but also keep the results
+realistic as described there.
+
+Most benchmarks should have data for all supported toolchains (the list
+is present in AGENTS.md), but make sure that there are some benchmarks,
+where some of the toolchains don't support (they would lack a json file).
+
+Adjust the javascript files to make sure they still work after the changes.
