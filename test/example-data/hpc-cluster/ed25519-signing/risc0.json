@@ -1,0 +1,68 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "ed25519-signing",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 114.85,
+        "mean": 11.48,
+        "deviation": 0.57,
+        "min": 10.91,
+        "max": 12.05,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 226.43,
+        "mean": 22.64,
+        "deviation": 1.13,
+        "min": 21.51,
+        "max": 23.77,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 84.55,
+        "mean": 8.45,
+        "deviation": 0.42,
+        "min": 8.03,
+        "max": 8.87,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      },
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      }
+    ],
+    "memory": {
+      "model": "Kingston ECC",
+      "size": 137438953472,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA A100",
+        "cores": 6912,
+        "speed": 1410
+      }
+    ],
+    "accelerated": true
+  }
+}

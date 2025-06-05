@@ -1,0 +1,62 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "groth16-proof",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 174.44,
+        "mean": 17.44,
+        "deviation": 0.87,
+        "min": 16.57,
+        "max": 18.31,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 354.48,
+        "mean": 35.45,
+        "deviation": 1.77,
+        "min": 33.68,
+        "max": 37.22,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 129.76,
+        "mean": 12.98,
+        "deviation": 0.65,
+        "min": 12.33,
+        "max": 13.63,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

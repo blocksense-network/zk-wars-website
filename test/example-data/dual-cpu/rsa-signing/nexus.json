@@ -1,0 +1,62 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "rsa-signing",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 116.8,
+        "mean": 11.68,
+        "deviation": 0.58,
+        "min": 11.1,
+        "max": 12.26,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 244.92,
+        "mean": 24.49,
+        "deviation": 1.22,
+        "min": 23.27,
+        "max": 25.71,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 88.95,
+        "mean": 8.9,
+        "deviation": 0.44,
+        "min": 8.46,
+        "max": 9.34,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

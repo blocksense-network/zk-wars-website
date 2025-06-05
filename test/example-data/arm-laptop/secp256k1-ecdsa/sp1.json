@@ -1,0 +1,63 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "secp256k1-ecdsa",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 312.71,
+        "mean": 31.27,
+        "deviation": 1.56,
+        "min": 29.71,
+        "max": 32.83,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 611.14,
+        "mean": 61.11,
+        "deviation": 3.06,
+        "min": 58.05,
+        "max": 64.17,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 235.35,
+        "mean": 23.53,
+        "deviation": 1.18,
+        "min": 22.35,
+        "max": 24.71,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

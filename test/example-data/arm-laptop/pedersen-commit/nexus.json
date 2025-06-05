@@ -1,0 +1,63 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "pedersen-commit",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 262.09,
+        "mean": 26.21,
+        "deviation": 1.31,
+        "min": 24.9,
+        "max": 27.52,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 539.61,
+        "mean": 53.96,
+        "deviation": 2.7,
+        "min": 51.26,
+        "max": 56.66,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 193.75,
+        "mean": 19.37,
+        "deviation": 0.97,
+        "min": 18.4,
+        "max": 20.34,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

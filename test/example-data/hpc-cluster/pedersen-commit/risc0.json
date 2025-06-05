@@ -1,0 +1,68 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "pedersen-commit",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 154.79,
+        "mean": 15.48,
+        "deviation": 0.77,
+        "min": 14.71,
+        "max": 16.25,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 300.2,
+        "mean": 30.02,
+        "deviation": 1.5,
+        "min": 28.52,
+        "max": 31.52,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 115.37,
+        "mean": 11.54,
+        "deviation": 0.58,
+        "min": 10.96,
+        "max": 12.12,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      },
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      }
+    ],
+    "memory": {
+      "model": "Kingston ECC",
+      "size": 137438953472,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA A100",
+        "cores": 6912,
+        "speed": 1410
+      }
+    ],
+    "accelerated": true
+  }
+}

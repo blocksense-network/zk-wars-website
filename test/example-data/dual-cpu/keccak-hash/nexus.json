@@ -1,0 +1,62 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "keccak-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 161.38,
+        "mean": 16.14,
+        "deviation": 0.81,
+        "min": 15.33,
+        "max": 16.95,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 297.38,
+        "mean": 29.74,
+        "deviation": 1.49,
+        "min": 28.25,
+        "max": 31.23,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 119.47,
+        "mean": 11.95,
+        "deviation": 0.6,
+        "min": 11.35,
+        "max": 12.55,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

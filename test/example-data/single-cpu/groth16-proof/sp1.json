@@ -1,0 +1,57 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "groth16-proof",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 184.48,
+        "mean": 18.45,
+        "deviation": 0.92,
+        "min": 17.53,
+        "max": 19.37,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 369.14,
+        "mean": 36.91,
+        "deviation": 1.85,
+        "min": 35.06,
+        "max": 38.76,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 147.33,
+        "mean": 14.73,
+        "deviation": 0.74,
+        "min": 13.99,
+        "max": 15.47,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

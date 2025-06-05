@@ -1,0 +1,63 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "blake3-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 268.67,
+        "mean": 26.87,
+        "deviation": 1.34,
+        "min": 25.53,
+        "max": 28.21,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 522.45,
+        "mean": 52.25,
+        "deviation": 2.61,
+        "min": 49.64,
+        "max": 54.86,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 207.15,
+        "mean": 20.72,
+        "deviation": 1.04,
+        "min": 19.68,
+        "max": 21.76,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

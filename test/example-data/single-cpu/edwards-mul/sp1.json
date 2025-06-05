@@ -1,0 +1,57 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "edwards-mul",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 250.07,
+        "mean": 25.01,
+        "deviation": 1.25,
+        "min": 23.76,
+        "max": 26.26,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 480.29,
+        "mean": 48.03,
+        "deviation": 2.4,
+        "min": 45.63,
+        "max": 50.43,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 186.86,
+        "mean": 18.69,
+        "deviation": 0.93,
+        "min": 17.76,
+        "max": 19.62,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

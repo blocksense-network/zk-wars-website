@@ -1,0 +1,63 @@
+{
+  "toolchain": "jolt",
+  "benchmarks": [
+    {
+      "name": "ed25519-signing",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 190.2,
+        "mean": 19.02,
+        "deviation": 0.95,
+        "min": 18.07,
+        "max": 19.97,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 370.04,
+        "mean": 37,
+        "deviation": 1.85,
+        "min": 35.15,
+        "max": 38.85,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 145.15,
+        "mean": 14.51,
+        "deviation": 0.73,
+        "min": 13.78,
+        "max": 15.24,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "edwards-mul",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 174.93,
+        "mean": 17.49,
+        "deviation": 0.87,
+        "min": 16.62,
+        "max": 18.36,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 371.72,
+        "mean": 37.17,
+        "deviation": 1.86,
+        "min": 35.31,
+        "max": 39.03,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 128.06,
+        "mean": 12.81,
+        "deviation": 0.64,
+        "min": 12.17,
+        "max": 13.45,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      },
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      }
+    ],
+    "memory": {
+      "model": "Kingston ECC",
+      "size": 137438953472,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA A100",
+        "cores": 6912,
+        "speed": 1410
+      }
+    ],
+    "accelerated": true
+  }
+}

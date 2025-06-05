@@ -1,0 +1,57 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "plonk-proof",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 208.47,
+        "mean": 20.85,
+        "deviation": 1.04,
+        "min": 19.81,
+        "max": 21.89,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 415.04,
+        "mean": 41.5,
+        "deviation": 2.08,
+        "min": 39.42,
+        "max": 43.58,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 150.71,
+        "mean": 15.07,
+        "deviation": 0.75,
+        "min": 14.32,
+        "max": 15.82,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

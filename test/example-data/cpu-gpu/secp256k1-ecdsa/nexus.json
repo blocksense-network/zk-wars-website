@@ -1,0 +1,63 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "secp256k1-ecdsa",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 191.68,
+        "mean": 19.17,
+        "deviation": 0.96,
+        "min": 18.21,
+        "max": 20.13,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 389.34,
+        "mean": 38.93,
+        "deviation": 1.95,
+        "min": 36.98,
+        "max": 40.88,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 147.1,
+        "mean": 14.71,
+        "deviation": 0.74,
+        "min": 13.97,
+        "max": 15.45,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

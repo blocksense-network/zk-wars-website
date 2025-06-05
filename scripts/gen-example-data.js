@@ -16,7 +16,17 @@ const benchmarks = [
   'mimc-hash',
   'fibonacci-proof',
   'rsa-signing',
-  'snark-verification'
+  'snark-verification',
+  'bls-aggregation',
+  'ed25519-signing',
+  'keccak-hash',
+  'groth16-proof',
+  'plonk-proof',
+  'blake3-hash',
+  'pedersen-commit',
+  'bulletproof-range',
+  'edwards-mul',
+  'secp256k1-ecdsa'
 ];
 const baseMeans = {
   'poseidon-hash':5,
@@ -28,7 +38,17 @@ const baseMeans = {
   'mimc-hash':11,
   'fibonacci-proof':12,
   'rsa-signing':13,
-  'snark-verification':14
+  'snark-verification':14,
+  'bls-aggregation':15,
+  'ed25519-signing':16,
+  'keccak-hash':17,
+  'groth16-proof':18,
+  'plonk-proof':19,
+  'blake3-hash':20,
+  'pedersen-commit':21,
+  'bulletproof-range':22,
+  'edwards-mul':23,
+  'secp256k1-ecdsa':24
 };
 const systems = [
   {
@@ -54,7 +74,7 @@ const systems = [
       hardwareAcceleration: [],
       accelerated: false
     },
-    benches: benchmarks.slice(0,8)
+    benches: benchmarks.slice(0,16)
   },
   {
     name: 'cpu-gpu',
@@ -65,7 +85,7 @@ const systems = [
       hardwareAcceleration: [{ model: 'NVIDIA RTX 3080', cores: 8704, speed: 1710 }],
       accelerated: true
     },
-    benches: ['poseidon-hash','aes256-encryption','ecc-pairing','sha256-hash','mimc-hash','fibonacci-proof']
+    benches: ['poseidon-hash','aes256-encryption','ecc-pairing','sha256-hash','mimc-hash','fibonacci-proof','keccak-hash','blake3-hash','pedersen-commit','bulletproof-range','edwards-mul','secp256k1-ecdsa']
   },
   {
     name: 'hpc-cluster',
@@ -90,16 +110,24 @@ const systems = [
       hardwareAcceleration: [{ model: 'Apple M1 GPU', cores: 8, speed: 3200 }],
       accelerated: true
     },
-    benches: ['poseidon-hash','merkle-tree','sha256-hash','rsa-signing','snark-verification']
+    benches: ['poseidon-hash','merkle-tree','sha256-hash','rsa-signing','snark-verification','ed25519-signing','keccak-hash','blake3-hash','pedersen-commit','secp256k1-ecdsa']
   }
 ];
 
 const unsupported = {
   'rsa-signing': ['sp1','zkwasm'],
-  'snark-verification': ['sp1','zkm']
+  'snark-verification': ['sp1','zkm'],
+  'pedersen-commit': ['jolt'],
+  'bulletproof-range': ['zkwasm']
 };
 
 function metric(mean, memory, size) {
+  // Introduce a small random variation to the mean so that
+  // the metrics are not identical on every generation. The
+  // noise is kept within ±5% so that it doesn't overshadow
+  // the hardware performance factor.
+  const noise = 1 + (Math.random() - 0.5) * 0.1;
+  mean = mean * noise;
   const deviation = +(mean * 0.05).toFixed(2);
   return {
     timeStarted: '2025-06-01T12:00:00Z',

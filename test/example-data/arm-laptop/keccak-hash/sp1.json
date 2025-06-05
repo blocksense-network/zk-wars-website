@@ -1,0 +1,63 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "keccak-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 209.1,
+        "mean": 20.91,
+        "deviation": 1.05,
+        "min": 19.86,
+        "max": 21.96,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 446.93,
+        "mean": 44.69,
+        "deviation": 2.23,
+        "min": 42.46,
+        "max": 46.92,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 156,
+        "mean": 15.6,
+        "deviation": 0.78,
+        "min": 14.82,
+        "max": 16.38,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "toolchain": "jolt",
+  "benchmarks": [
+    {
+      "name": "keccak-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 176.76,
+        "mean": 17.68,
+        "deviation": 0.88,
+        "min": 16.8,
+        "max": 18.56,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 344.42,
+        "mean": 34.44,
+        "deviation": 1.72,
+        "min": 32.72,
+        "max": 36.16,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 133.49,
+        "mean": 13.35,
+        "deviation": 0.67,
+        "min": 12.68,
+        "max": 14.02,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

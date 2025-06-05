@@ -1,0 +1,68 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "secp256k1-ecdsa",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 172.98,
+        "mean": 17.3,
+        "deviation": 0.86,
+        "min": 16.44,
+        "max": 18.16,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 363.98,
+        "mean": 36.4,
+        "deviation": 1.82,
+        "min": 34.58,
+        "max": 38.22,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 142.73,
+        "mean": 14.27,
+        "deviation": 0.71,
+        "min": 13.56,
+        "max": 14.98,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      },
+      {
+        "model": "Intel Xeon Platinum 8368",
+        "cores": 38,
+        "speed": 2.4
+      }
+    ],
+    "memory": {
+      "model": "Kingston ECC",
+      "size": 137438953472,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA A100",
+        "cores": 6912,
+        "speed": 1410
+      }
+    ],
+    "accelerated": true
+  }
+}

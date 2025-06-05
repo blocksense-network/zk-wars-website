@@ -1,0 +1,57 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "ed25519-signing",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 167.22,
+        "mean": 16.72,
+        "deviation": 0.84,
+        "min": 15.88,
+        "max": 17.56,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 331.83,
+        "mean": 33.18,
+        "deviation": 1.66,
+        "min": 31.52,
+        "max": 34.84,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 122.77,
+        "mean": 12.28,
+        "deviation": 0.61,
+        "min": 11.67,
+        "max": 12.89,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

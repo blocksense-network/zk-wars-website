@@ -1,0 +1,57 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "pedersen-commit",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 227.13,
+        "mean": 22.71,
+        "deviation": 1.14,
+        "min": 21.57,
+        "max": 23.85,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 451.15,
+        "mean": 45.11,
+        "deviation": 2.26,
+        "min": 42.85,
+        "max": 47.37,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 169.94,
+        "mean": 16.99,
+        "deviation": 0.85,
+        "min": 16.14,
+        "max": 17.84,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "bls-aggregation",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 163.61,
+        "mean": 16.36,
+        "deviation": 0.82,
+        "min": 15.54,
+        "max": 17.18,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 321.57,
+        "mean": 32.16,
+        "deviation": 1.61,
+        "min": 30.55,
+        "max": 33.77,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 117.65,
+        "mean": 11.77,
+        "deviation": 0.59,
+        "min": 11.18,
+        "max": 12.36,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

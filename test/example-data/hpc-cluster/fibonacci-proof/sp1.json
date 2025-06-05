@@ -6,18 +6,18 @@
       "compile": {
         "timeStarted": "2025-06-01T12:00:00Z",
         "runs": 10,
-        "totalDuration": 89.04,
-        "mean": 8.9,
+        "totalDuration": 89.66,
+        "mean": 8.97,
         "deviation": 0.45,
-        "min": 8.45,
-        "max": 9.35,
+        "min": 8.52,
+        "max": 9.42,
         "memory": 536870912,
         "size": 1000000
       },
       "prove": {
         "timeStarted": "2025-06-01T12:00:00Z",
         "runs": 10,
-        "totalDuration": 178.08,
+        "totalDuration": 178.11,
         "mean": 17.81,
         "deviation": 0.89,
         "min": 16.92,
@@ -28,11 +28,11 @@
       "verify": {
         "timeStarted": "2025-06-01T12:00:00Z",
         "runs": 10,
-        "totalDuration": 66.78,
-        "mean": 6.68,
-        "deviation": 0.33,
-        "min": 6.35,
-        "max": 7.01,
+        "totalDuration": 64.78,
+        "mean": 6.48,
+        "deviation": 0.32,
+        "min": 6.16,
+        "max": 6.8,
         "memory": 268435456,
         "size": 1200000
       }

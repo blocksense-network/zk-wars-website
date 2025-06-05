@@ -1,0 +1,57 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "keccak-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 177.91,
+        "mean": 17.79,
+        "deviation": 0.89,
+        "min": 16.9,
+        "max": 18.68,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 335.34,
+        "mean": 33.53,
+        "deviation": 1.68,
+        "min": 31.85,
+        "max": 35.21,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 127.78,
+        "mean": 12.78,
+        "deviation": 0.64,
+        "min": 12.14,
+        "max": 13.42,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

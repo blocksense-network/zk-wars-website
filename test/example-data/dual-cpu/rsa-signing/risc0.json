@@ -1,0 +1,62 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "rsa-signing",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 117.55,
+        "mean": 11.76,
+        "deviation": 0.59,
+        "min": 11.17,
+        "max": 12.35,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 242.8,
+        "mean": 24.28,
+        "deviation": 1.21,
+        "min": 23.07,
+        "max": 25.49,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 93.88,
+        "mean": 9.39,
+        "deviation": 0.47,
+        "min": 8.92,
+        "max": 9.86,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

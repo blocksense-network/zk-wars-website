@@ -1,0 +1,62 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "snark-verification",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 133.01,
+        "mean": 13.3,
+        "deviation": 0.67,
+        "min": 12.63,
+        "max": 13.97,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 258.75,
+        "mean": 25.87,
+        "deviation": 1.29,
+        "min": 24.58,
+        "max": 27.16,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 101.74,
+        "mean": 10.17,
+        "deviation": 0.51,
+        "min": 9.66,
+        "max": 10.68,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

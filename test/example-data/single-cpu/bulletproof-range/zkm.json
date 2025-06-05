@@ -1,0 +1,57 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "bulletproof-range",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 246.96,
+        "mean": 24.7,
+        "deviation": 1.23,
+        "min": 23.47,
+        "max": 25.93,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 492.16,
+        "mean": 49.22,
+        "deviation": 2.46,
+        "min": 46.76,
+        "max": 51.68,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 181.12,
+        "mean": 18.11,
+        "deviation": 0.91,
+        "min": 17.2,
+        "max": 19.02,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

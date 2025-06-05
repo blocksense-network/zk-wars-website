@@ -1,0 +1,62 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "blake3-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 203.35,
+        "mean": 20.33,
+        "deviation": 1.02,
+        "min": 19.31,
+        "max": 21.35,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 374.26,
+        "mean": 37.43,
+        "deviation": 1.87,
+        "min": 35.56,
+        "max": 39.3,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 140.87,
+        "mean": 14.09,
+        "deviation": 0.7,
+        "min": 13.39,
+        "max": 14.79,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

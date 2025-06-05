@@ -1,0 +1,63 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "pedersen-commit",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 179.73,
+        "mean": 17.97,
+        "deviation": 0.9,
+        "min": 17.07,
+        "max": 18.87,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 387.76,
+        "mean": 38.78,
+        "deviation": 1.94,
+        "min": 36.84,
+        "max": 40.72,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 142.87,
+        "mean": 14.29,
+        "deviation": 0.71,
+        "min": 13.58,
+        "max": 15,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "keccak-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 142.97,
+        "mean": 14.3,
+        "deviation": 0.71,
+        "min": 13.59,
+        "max": 15.01,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 284.14,
+        "mean": 28.41,
+        "deviation": 1.42,
+        "min": 26.99,
+        "max": 29.83,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 101.38,
+        "mean": 10.14,
+        "deviation": 0.51,
+        "min": 9.63,
+        "max": 10.65,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

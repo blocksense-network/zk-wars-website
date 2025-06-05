@@ -1,0 +1,62 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "bls-aggregation",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 142.66,
+        "mean": 14.27,
+        "deviation": 0.71,
+        "min": 13.56,
+        "max": 14.98,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 280.79,
+        "mean": 28.08,
+        "deviation": 1.4,
+        "min": 26.68,
+        "max": 29.48,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 111.84,
+        "mean": 11.18,
+        "deviation": 0.56,
+        "min": 10.62,
+        "max": 11.74,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}
