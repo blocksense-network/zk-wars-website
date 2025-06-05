@@ -1,0 +1,6 @@
+In `scripts/gen-example-data.js`, introduce a bit of randomness in the metrics (the randomness
+should make a relatively small contribution in comparison to the current `factor` that accounts
+for differences in the hardware performance).
+
+Follow the principles outlined in the previous tasks `.agents/tasks/2025/06/04-1324-synthetic-data`
+and `.agents/tasks/2025/06/05-0128-more-benchmark-data` and generate 10 more realistic benchmarks.
