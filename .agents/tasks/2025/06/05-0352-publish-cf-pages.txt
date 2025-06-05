@@ -1,0 +1,8 @@
+Add a simple `just publish` target that will publish the static web-site
+in the Cloudflare Pages platform.
+
+Create a MAINTAINERS.md file that will provide instructions for how to set
+up the user account in Cloudflare and what environment variables must be
+specified when running the `just publish` command.
+
+Make sure that direnv load ENV variables from a user-supplied .env file.

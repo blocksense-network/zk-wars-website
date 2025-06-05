@@ -11,3 +11,6 @@ test:
 
 lint:
  eslint src
+
+publish: build
+ wrangler pages deploy build --project-name $CF_PAGES_PROJECT --branch ${CF_PAGES_BRANCH:-main}
