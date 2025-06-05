@@ -19,6 +19,7 @@
             pkgs.jq
             pkgs.just
             pkgs.nodePackages.eslint
+            pkgs.nodePackages.wrangler
           ];
           shellHook = ''
             export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver}/share/playwright-browsers
