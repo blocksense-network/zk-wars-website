@@ -2,7 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const dataDir = path.join(__dirname, '..', 'test', 'example-data');
-fs.rmSync(dataDir, { recursive: true, force: true });
+const skipExisting = process.argv.includes('--skip-existing');
+if (!skipExisting) {
+  fs.rmSync(dataDir, { recursive: true, force: true });
+}
 fs.mkdirSync(dataDir, { recursive: true });
 
 const toolchains = ['jolt','nexus','risc0','sp1','zkm','zkwasm'];
@@ -26,7 +29,12 @@ const benchmarks = [
   'pedersen-commit',
   'bulletproof-range',
   'edwards-mul',
-  'secp256k1-ecdsa'
+  'secp256k1-ecdsa',
+  'sha3-hash',
+  'chacha20-encryption',
+  'ecc-addition',
+  'fft-transform',
+  'rsa-verification'
 ];
 const baseMeans = {
   'poseidon-hash':5,
@@ -48,7 +56,12 @@ const baseMeans = {
   'pedersen-commit':21,
   'bulletproof-range':22,
   'edwards-mul':23,
-  'secp256k1-ecdsa':24
+  'secp256k1-ecdsa':24,
+  'sha3-hash':25,
+  'chacha20-encryption':26,
+  'ecc-addition':27,
+  'fft-transform':28,
+  'rsa-verification':29
 };
 const systems = [
   {
@@ -85,7 +98,7 @@ const systems = [
       hardwareAcceleration: [{ model: 'NVIDIA RTX 3080', cores: 8704, speed: 1710 }],
       accelerated: true
     },
-    benches: ['poseidon-hash','aes256-encryption','ecc-pairing','sha256-hash','mimc-hash','fibonacci-proof','keccak-hash','blake3-hash','pedersen-commit','bulletproof-range','edwards-mul','secp256k1-ecdsa']
+    benches: ['poseidon-hash','aes256-encryption','ecc-pairing','sha256-hash','mimc-hash','fibonacci-proof','keccak-hash','blake3-hash','pedersen-commit','bulletproof-range','edwards-mul','secp256k1-ecdsa','sha3-hash','chacha20-encryption','ecc-addition','fft-transform','rsa-verification']
   },
   {
     name: 'hpc-cluster',
@@ -110,7 +123,7 @@ const systems = [
       hardwareAcceleration: [{ model: 'Apple M1 GPU', cores: 8, speed: 3200 }],
       accelerated: true
     },
-    benches: ['poseidon-hash','merkle-tree','sha256-hash','rsa-signing','snark-verification','ed25519-signing','keccak-hash','blake3-hash','pedersen-commit','secp256k1-ecdsa']
+    benches: ['poseidon-hash','merkle-tree','sha256-hash','rsa-signing','snark-verification','ed25519-signing','keccak-hash','blake3-hash','pedersen-commit','secp256k1-ecdsa','sha3-hash','chacha20-encryption','ecc-addition','fft-transform','rsa-verification']
   }
 ];
 
@@ -154,6 +167,8 @@ for (const sys of systems) {
       const compileMean = base * factor;
       const proveMean = compileMean * 2;
       const verifyMean = compileMean * 0.75;
+      const file = path.join(benchDir, `${tc}.json`);
+      if (skipExisting && fs.existsSync(file)) continue;
       const json = {
         toolchain: tc,
         benchmarks: [{
@@ -164,7 +179,7 @@ for (const sys of systems) {
         }],
         hardware: sys.specs
       };
-      fs.writeFileSync(path.join(benchDir, `${tc}.json`), JSON.stringify(json, null, 2));
+      fs.writeFileSync(file, JSON.stringify(json, null, 2));
     }
   }
 }
