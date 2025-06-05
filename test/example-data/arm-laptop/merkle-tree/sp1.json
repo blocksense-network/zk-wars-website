@@ -1,0 +1,63 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "merkle-tree",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 114.48,
+        "mean": 11.45,
+        "deviation": 0.57,
+        "min": 10.88,
+        "max": 12.02,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 228.96,
+        "mean": 22.9,
+        "deviation": 1.14,
+        "min": 21.76,
+        "max": 24.04,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 85.86,
+        "mean": 8.59,
+        "deviation": 0.43,
+        "min": 8.16,
+        "max": 9.02,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

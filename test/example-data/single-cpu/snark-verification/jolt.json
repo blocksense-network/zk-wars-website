@@ -1,0 +1,57 @@
+{
+  "toolchain": "jolt",
+  "benchmarks": [
+    {
+      "name": "snark-verification",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 140,
+        "mean": 14,
+        "deviation": 0.7,
+        "min": 13.3,
+        "max": 14.7,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 280,
+        "mean": 28,
+        "deviation": 1.4,
+        "min": 26.6,
+        "max": 29.4,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 105,
+        "mean": 10.5,
+        "deviation": 0.53,
+        "min": 9.97,
+        "max": 11.03,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "fibonacci-proof",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 103.68,
+        "mean": 10.37,
+        "deviation": 0.52,
+        "min": 9.85,
+        "max": 10.89,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 207.36,
+        "mean": 20.74,
+        "deviation": 1.04,
+        "min": 19.7,
+        "max": 21.78,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 77.76,
+        "mean": 7.78,
+        "deviation": 0.39,
+        "min": 7.39,
+        "max": 8.17,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

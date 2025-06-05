@@ -1,0 +1,62 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "poseidon-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 49.5,
+        "mean": 4.95,
+        "deviation": 0.25,
+        "min": 4.7,
+        "max": 5.2,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 99,
+        "mean": 9.9,
+        "deviation": 0.5,
+        "min": 9.4,
+        "max": 10.4,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 37.13,
+        "mean": 3.71,
+        "deviation": 0.19,
+        "min": 3.52,
+        "max": 3.9,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "fibonacci-proof",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 118.8,
+        "mean": 11.88,
+        "deviation": 0.59,
+        "min": 11.29,
+        "max": 12.47,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 237.6,
+        "mean": 23.76,
+        "deviation": 1.19,
+        "min": 22.57,
+        "max": 24.95,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 89.1,
+        "mean": 8.91,
+        "deviation": 0.45,
+        "min": 8.46,
+        "max": 9.36,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

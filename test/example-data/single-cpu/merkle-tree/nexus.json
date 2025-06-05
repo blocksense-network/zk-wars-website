@@ -1,0 +1,57 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "merkle-tree",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 91.8,
+        "mean": 9.18,
+        "deviation": 0.46,
+        "min": 8.72,
+        "max": 9.64,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 183.6,
+        "mean": 18.36,
+        "deviation": 0.92,
+        "min": 17.44,
+        "max": 19.28,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 68.85,
+        "mean": 6.88,
+        "deviation": 0.34,
+        "min": 6.54,
+        "max": 7.22,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

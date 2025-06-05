@@ -1,0 +1,62 @@
+{
+  "toolchain": "risc0",
+  "benchmarks": [
+    {
+      "name": "aes256-encryption",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 56.16,
+        "mean": 5.62,
+        "deviation": 0.28,
+        "min": 5.34,
+        "max": 5.9,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 112.32,
+        "mean": 11.23,
+        "deviation": 0.56,
+        "min": 10.67,
+        "max": 11.79,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 42.12,
+        "mean": 4.21,
+        "deviation": 0.21,
+        "min": 4,
+        "max": 4.42,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      },
+      {
+        "model": "Intel Xeon Gold 6226R",
+        "cores": 16,
+        "speed": 2.9
+      }
+    ],
+    "memory": {
+      "model": "Samsung ECC",
+      "size": 68719476736,
+      "speed": 2933
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

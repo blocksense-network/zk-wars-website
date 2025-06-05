@@ -1,0 +1,63 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "sha256-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 88,
+        "mean": 8.8,
+        "deviation": 0.44,
+        "min": 8.36,
+        "max": 9.24,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 176,
+        "mean": 17.6,
+        "deviation": 0.88,
+        "min": 16.72,
+        "max": 18.48,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 66,
+        "mean": 6.6,
+        "deviation": 0.33,
+        "min": 6.27,
+        "max": 6.93,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

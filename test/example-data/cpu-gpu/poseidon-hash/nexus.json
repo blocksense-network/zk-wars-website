@@ -1,0 +1,63 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "poseidon-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 40.8,
+        "mean": 4.08,
+        "deviation": 0.2,
+        "min": 3.88,
+        "max": 4.28,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 81.6,
+        "mean": 8.16,
+        "deviation": 0.41,
+        "min": 7.75,
+        "max": 8.57,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 30.6,
+        "mean": 3.06,
+        "deviation": 0.15,
+        "min": 2.91,
+        "max": 3.21,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

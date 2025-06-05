@@ -1,0 +1,57 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "mimc-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 112.2,
+        "mean": 11.22,
+        "deviation": 0.56,
+        "min": 10.66,
+        "max": 11.78,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 224.4,
+        "mean": 22.44,
+        "deviation": 1.12,
+        "min": 21.32,
+        "max": 23.56,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 84.15,
+        "mean": 8.42,
+        "deviation": 0.42,
+        "min": 8,
+        "max": 8.84,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

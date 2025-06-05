@@ -1,0 +1,63 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "rsa-signing",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 168.48,
+        "mean": 16.85,
+        "deviation": 0.84,
+        "min": 16.01,
+        "max": 17.69,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 336.96,
+        "mean": 33.7,
+        "deviation": 1.68,
+        "min": 32.02,
+        "max": 35.38,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 126.36,
+        "mean": 12.64,
+        "deviation": 0.63,
+        "min": 12.01,
+        "max": 13.27,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

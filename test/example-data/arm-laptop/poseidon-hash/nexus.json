@@ -1,0 +1,63 @@
+{
+  "toolchain": "nexus",
+  "benchmarks": [
+    {
+      "name": "poseidon-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 61.2,
+        "mean": 6.12,
+        "deviation": 0.31,
+        "min": 5.81,
+        "max": 6.43,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 122.4,
+        "mean": 12.24,
+        "deviation": 0.61,
+        "min": 11.63,
+        "max": 12.85,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 45.9,
+        "mean": 4.59,
+        "deviation": 0.23,
+        "min": 4.36,
+        "max": 4.82,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}
