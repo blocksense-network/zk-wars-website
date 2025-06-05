@@ -122,7 +122,8 @@ Benchmark data stored as structured JSON files with the following schema:
 
 ```json
 {
-  "benchmarking": [{
+  "toolchain": <toolchain-name>,
+  "benchmarks": [{
     "name": "<benchmark-program-name>",
     "compile": {
       "timeStarted": "<ISO-timestamp>",
