@@ -1,0 +1,57 @@
+{
+  "toolchain": "jolt",
+  "benchmarks": [
+    {
+      "name": "chacha20-encryption",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 262.95,
+        "mean": 26.29,
+        "deviation": 1.31,
+        "min": 24.98,
+        "max": 27.6,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 510.93,
+        "mean": 51.09,
+        "deviation": 2.55,
+        "min": 48.54,
+        "max": 53.64,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 197.55,
+        "mean": 19.75,
+        "deviation": 0.99,
+        "min": 18.76,
+        "max": 20.74,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

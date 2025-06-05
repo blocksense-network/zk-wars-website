@@ -1,0 +1,57 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "chacha20-encryption",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 279.35,
+        "mean": 27.93,
+        "deviation": 1.4,
+        "min": 26.53,
+        "max": 29.33,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 547.15,
+        "mean": 54.71,
+        "deviation": 2.74,
+        "min": 51.97,
+        "max": 57.45,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 203.87,
+        "mean": 20.39,
+        "deviation": 1.02,
+        "min": 19.37,
+        "max": 21.41,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

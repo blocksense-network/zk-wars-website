@@ -1,0 +1,63 @@
+{
+  "toolchain": "jolt",
+  "benchmarks": [
+    {
+      "name": "sha3-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 300.91,
+        "mean": 30.09,
+        "deviation": 1.5,
+        "min": 28.59,
+        "max": 31.59,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 623.92,
+        "mean": 62.39,
+        "deviation": 3.12,
+        "min": 59.27,
+        "max": 65.51,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 228.57,
+        "mean": 22.86,
+        "deviation": 1.14,
+        "min": 21.72,
+        "max": 24,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

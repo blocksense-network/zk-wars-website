@@ -1,0 +1,57 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "sha3-hash",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 286.27,
+        "mean": 28.63,
+        "deviation": 1.43,
+        "min": 27.2,
+        "max": 30.06,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 555.98,
+        "mean": 55.6,
+        "deviation": 2.78,
+        "min": 52.82,
+        "max": 58.38,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 205.03,
+        "mean": 20.5,
+        "deviation": 1.03,
+        "min": 19.47,
+        "max": 21.53,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

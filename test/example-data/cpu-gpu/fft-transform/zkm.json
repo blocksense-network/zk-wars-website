@@ -1,0 +1,63 @@
+{
+  "toolchain": "zkm",
+  "benchmarks": [
+    {
+      "name": "fft-transform",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 248.07,
+        "mean": 24.81,
+        "deviation": 1.24,
+        "min": 23.57,
+        "max": 26.05,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 501,
+        "mean": 50.1,
+        "deviation": 2.5,
+        "min": 47.6,
+        "max": 52.6,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 183.64,
+        "mean": 18.36,
+        "deviation": 0.92,
+        "min": 17.44,
+        "max": 19.28,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Xeon W-1290",
+        "cores": 10,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "G.Skill Ripjaws",
+      "size": 34359738368,
+      "speed": 3600
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "NVIDIA RTX 3080",
+        "cores": 8704,
+        "speed": 1710
+      }
+    ],
+    "accelerated": true
+  }
+}

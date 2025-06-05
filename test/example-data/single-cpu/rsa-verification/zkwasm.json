@@ -1,0 +1,57 @@
+{
+  "toolchain": "zkwasm",
+  "benchmarks": [
+    {
+      "name": "rsa-verification",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 315.31,
+        "mean": 31.53,
+        "deviation": 1.58,
+        "min": 29.95,
+        "max": 33.11,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 615.27,
+        "mean": 61.53,
+        "deviation": 3.08,
+        "min": 58.45,
+        "max": 64.61,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 241.32,
+        "mean": 24.13,
+        "deviation": 1.21,
+        "min": 22.92,
+        "max": 25.34,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Intel Core i7-9700K",
+        "cores": 8,
+        "speed": 3.6
+      }
+    ],
+    "memory": {
+      "model": "Corsair Vengeance",
+      "size": 17179869184,
+      "speed": 3200
+    },
+    "hardwareAcceleration": [],
+    "accelerated": false
+  }
+}

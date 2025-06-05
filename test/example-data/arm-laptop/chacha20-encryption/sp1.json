@@ -1,0 +1,63 @@
+{
+  "toolchain": "sp1",
+  "benchmarks": [
+    {
+      "name": "chacha20-encryption",
+      "compile": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 328.31,
+        "mean": 32.83,
+        "deviation": 1.64,
+        "min": 31.19,
+        "max": 34.47,
+        "memory": 536870912,
+        "size": 1000000
+      },
+      "prove": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 629.98,
+        "mean": 63,
+        "deviation": 3.15,
+        "min": 59.85,
+        "max": 66.15,
+        "memory": 1073741824,
+        "size": 1200000
+      },
+      "verify": {
+        "timeStarted": "2025-06-01T12:00:00Z",
+        "runs": 10,
+        "totalDuration": 254.17,
+        "mean": 25.42,
+        "deviation": 1.27,
+        "min": 24.15,
+        "max": 26.69,
+        "memory": 268435456,
+        "size": 1200000
+      }
+    }
+  ],
+  "hardware": {
+    "cpu": [
+      {
+        "model": "Apple M1",
+        "cores": 8,
+        "speed": 3.2
+      }
+    ],
+    "memory": {
+      "model": "LPDDR4",
+      "size": 17179869184,
+      "speed": 4266
+    },
+    "hardwareAcceleration": [
+      {
+        "model": "Apple M1 GPU",
+        "cores": 8,
+        "speed": 3200
+      }
+    ],
+    "accelerated": true
+  }
+}

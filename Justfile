@@ -14,3 +14,6 @@ lint:
 
 publish: build
  wrangler pages deploy build --project-name $CF_PAGES_PROJECT --branch ${CF_PAGES_BRANCH:-main}
+
+gen-example-data ARGS='':
+ node scripts/gen-example-data.js {{ARGS}}
