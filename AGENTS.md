@@ -9,20 +9,6 @@ The project uses a `Justfile` to simplify common tasks:
 
 ## Example Benchmark Data
 
-Synthetic benchmark results are stored under `test/example-data` using the
-following directory structure:
-
-```
-test/example-data/${system_name}/${benchmark_name}/${toolchain_name}.json
-```
-
-`toolchain_name` is always one of the following:
-
-`jolt`, `nexus`, `risc0`, `sp1`, `zkm`, `zkwasm`
-
-Each json file contains two three-level keys:
-
-- `toolchain`: the name of the toolchain
-- `benchmarks` – an array with one entry holding `compile`, `prove`, and
-  `verify` metrics.
-- `hardware` – description of the machine that produced the results.
+See `docs/ARCHITECTURE.md` for the specification of the benchmark data used
+by this codebase. There is an example benchmark data directory located in
+`test/example-data`.

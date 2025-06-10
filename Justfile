@@ -10,7 +10,10 @@ test:
  node --test test
 
 lint:
- eslint src
+ eslint src --ext .ts,.tsx
+
+lint-fix:
+ eslint src --ext .ts,.tsx --fix
 
 publish: build
  wrangler pages deploy build --project-name $CF_PAGES_PROJECT --branch ${CF_PAGES_BRANCH:-main}

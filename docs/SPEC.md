@@ -12,7 +12,7 @@ The ZK Toolchain Benchmarks website (`zk-wars.blocksense.network`) presents perf
 ## User Goals
 
 * Quickly identify the best-performing toolchain overall.
-* Evaluate toolchain performance for predefined and custom cryptographic benchmarks.
+* Evaluate toolchain performance for predefined benchmarks and custom hypothetical use cases.
 * Determine optimal hardware configurations.
 
 ## Key Features
@@ -118,35 +118,7 @@ Hybrid approach:
 
 ### Data Management
 
-Benchmark data stored as structured JSON files with the following schema:
-
-```json
-{
-  "toolchain": <toolchain-name>,
-  "benchmarks": [{
-    "name": "<benchmark-program-name>",
-    "compile": {
-      "timeStarted": "<ISO-timestamp>",
-      "runs": <number-of-runs>,
-      "totalDuration": <total-duration-seconds>,
-      "mean": <mean-duration-seconds>,
-      "deviation": <standard-deviation-seconds>,
-      "min": <min-duration-seconds>,
-      "max": <max-duration-seconds>,
-      "memory": <memory-usage-bytes>,
-      "size": <proof-or-circuit-size-in-bytes>
-    },
-    "prove": { <same-as-compile> },
-    "verify": { <same-as-compile> }
-  }],
-  "hardware": {
-    "cpu": [{"model": "<cpu-model>", "cores": <cores-count>, "speed": <speed-GHz>}],
-    "memory": {"model": "<memory-model>", "size": <size-bytes>, "speed": <speed-MHz>},
-    "hardwareAcceleration": [{"model": "<gpu-model>", "cores": <cores-count>, "speed": <speed-MHz>}],
-    "accelerated": false
-  }
-}
-```
+See [ARCHITECTURE.md](./ARCHITECTURE.md) for explanation for the benchmark data.
 
 In the static build of the web-site. The client will have a pre-populated cache with all benchmark
 data available without making requests to the server.

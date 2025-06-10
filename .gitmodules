@@ -1,0 +1,3 @@
+[submodule "vendor/blocksense"]
+	path = vendor/blocksense
+	url = git@github.com:blocksense-network/blocksense
